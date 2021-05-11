@@ -8,28 +8,37 @@
 
     <body>
         <div id="bloc_page">
+
             <header>
-                <div id="Titre principal">
+                <div id="titre_principal">
+
                     <div id="logo">
                         <img src="images/logo.png" alt="Logo Reservia" />
+                        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                        <h2>En plein centre ville ou en pleine nature</h2>
                     </div>
-                    <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                    <h2>En plein centre ville ou en pleine nature</h2>
+                
+                    <nav>
+                        <ul>
+                            <li>Hébergements</li>
+                            <li>Activités</li>
+                            <li>S'inscrire</li>
+                        </ul>
+                    </nav>
+
                 </div>
             
-                <nav>
-                    <ul>
-                        <li>Hébergements</li>
-                        <li>Activités</li>
-                        <li>S'inscrire</li>
-                    </ul>
-                </nav>
+                
 
             </header>
 
 
             <div id="recherche">
                 <h3>Formulaire de recherche</h3>
+               <form method="post" action="#">
+                   <input type ="text" name="ville" id="ville" autofocus />
+
+               </form> 
             </div>
             <div id="filtres">
                 <h3>Filtres</h3>
@@ -37,17 +46,32 @@
 
 
             <section>
-                <article>
+                <div id="results">
+                    <article>
 
-                    <h3>Resultats</h3>
+                        <h3>Resultats</h3>
+                        <table>
+                            <tr>
+                                <td>Hotel 1</td>
+                                <td>Hotel 2</td>
+                            </tr>
+                        </table>
 
-                </article>
+                    </article>
 
-                <aside>
+                    <aside>
 
-                    <h3>Les plus populaires</h3>
+                        <h3>Les plus populaires</h3>
 
-                </aside>
+                        <table>
+                            <tr>
+                                <td>Hotel 1</td>
+                                <td>Hotel 2</td>
+                            </tr>
+                        </table>
+
+                    </aside>
+                </div>
 
                 <div id="activites">
                     <h3>Activités à ...</h3>
@@ -56,7 +80,7 @@
             </section>
 
             <footer>
-                <div id="foot1">
+                <div id="footer1">
                     <strong>A propos</strong>
                     <ul>
                         <li>Fonctionnement du site</li>
@@ -65,7 +89,7 @@
                     </ul>
                 </div>
 
-                <div id="foot2">
+                <div id="footer2">
                     <strong>Nos hébergements</strong>
                     <ul>
                         <li>Charte qualité</li>
@@ -73,7 +97,7 @@
                     </ul>
                 </div>
 
-                <div id="foot3">
+                <div id="footer3">
                     <strong>Assistance</strong>
                     <ul>
                         <li>Centre d'aide</li>

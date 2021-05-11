@@ -1,0 +1,68 @@
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+h1
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 1em;
+}
+
+h3
+{
+    font-size:0.9em;
+    font-weight: normal;
+}
+
+header
+{background-color: rgb(164, 242, 245);}
+
+#titre_principal
+{
+    display: flex;
+}
+
+nav ul
+{
+    list-style-type:none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 30px;
+}
+
+footer
+{
+    display: flex;
+    background-color: aquamarine;
+}
+
+footer ul
+{ 
+  list-style-type:none;
+  display:flex;
+  flex-direction:column;
+}
+
+#results
+{
+  background-color: rgb(190, 180, 180);
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+td
+{
+    border: 1px solid rgb(15, 15, 14);
+
+}
