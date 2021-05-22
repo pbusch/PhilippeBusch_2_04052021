@@ -100,10 +100,7 @@ article {
 
 img {
     /*max-width:100%;*/
-    object-fit:fill;
-    overflow:hidden;
-    min-height: 0;
-    min-width: 0;
+    object-fit:contain;
 }
 
 
