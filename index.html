@@ -4,15 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/fc24da446d.js" crossorigin="anonymous"></script>
     <Title> Reservia - Plannifiez vos vacances</Title>
 </head>
 
 <body>
-    <div id="bloc_page">
-
+    
         <header>
 
             <div id="logo">
+                <br />
                 <img src="images/logo.png" alt="Logo Reservia" />
                 <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                 <h2>En plein centre ville ou en pleine nature !</h2>
@@ -20,52 +21,64 @@
 
             <nav>
                 <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
+                    <li><a href="index.html">Hébergements</a></li>
+                    <li><a href="activites.html">Activités</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
                 </ul>
             </nav>
 
         </header>
 
+        <div class="f-ville">
+            <div class="f-gps">
+            <i class="fas fa-map-marker-alt"></i>
+            </div>
 
-        <div id="recherche">
-            <h3>Formulaire de recherche</h3>
-            <form method="post" action="#">
-                <input type="text" name="ville" id="ville" autofocus />
+            <div class="f-querry">
+                <form method="post" action="#" id="form1">
+                <input type="text" name="ville" id="ville" value="Marseille, France" />
+                </form>
+            </div>
 
-            </form>
+            <div class="f-button">
+                <button type="button" class="button" form="form1" value="submit">Rechercher</button>
+            </div>
         </div>
-        <div id="filtres">
-            <h3>Filtres</h3>
+        <br/>
+
+        <div class="filtres">
+            <div class="fi-titre">Filtres</div>
+            <div class="fi-eco"><i class="fas fa-money-bill-wave"></i> Economique </div>
+            <div class="fi-fam"><i class="fas fa-child"></i> Familial</div>
+            <div class="fi-rom"><i class="fas fa-heart"></i> Romantique</div>
+            <div class="fi-ani"><i class="fas fa-dog"></i> Annimaux autorisés</div>
         </div>
 
 
         <section>
-            
-                <h3>Resultats</h3>
+                <h2> <i class="fas fa-info-circle"></i>  Plus de 500 logements sont disponibles dans cette ville</h2>
 
                 <ul class="ResultHotels">
 
                         <li class="hotels">
-                            <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" />
-                            <h3>Bob</h3>
-                           
-                    
-                        </li>
-
-                        <li class="hotels">
-                            <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" />
-                            
-                        </li>
-
-                        <li class="hotels">
-                            <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" />
-                            
-                        </li>
-
-                        <li class="hotels">
                             <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
+                            
+                                Auberge La Cannebière
+                            
+                        </li>
+
+                        <li class="hotels">
+                            <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" />
+                            
+                        </li>
+
+                        <li class="hotels">
+                            <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" />
+                            
+                        </li>
+
+                        <li class="hotels">
+                            <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" />
                             
                         </li>
 
@@ -75,7 +88,7 @@
                         </li>
 
                         <li class="hotels">
-                            <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" />
+                            <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" />
                             
                         </li>
                 </ul>
@@ -125,7 +138,6 @@
         </footer>
 
 
-    </div>
 </body>
 
 </html>
