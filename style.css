@@ -193,8 +193,6 @@ section {
     padding: 5px;
     margin: 5px;
     width: 250px;
-    height: 105px;
-    /*margin-top: 10px;*/
     font-size: 0.8em;
     text-align: center;
     box-shadow: 5px 5px 5px rgb(216, 211, 211);
@@ -250,6 +248,7 @@ aside ul {
     background-color: #F2F2F2;
     border-radius: 15px;
     width:280px;
+    height:425px;
     list-style: none;
 }
 
