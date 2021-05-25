@@ -156,17 +156,6 @@ section {
     padding: 0;
 }
 
-.hebergements {
-    /*display: flex;
-    flex-direction: row;
-    padding: 2px;
-    list-style: none;
-    background-color: #F2F2F2;
-    border-radius: 15px;
-    width:570px;*/
-
-}
-
 .ResultHotels {
     display: flex;
     flex-flow: row wrap;
