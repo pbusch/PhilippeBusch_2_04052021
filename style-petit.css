@@ -14,7 +14,6 @@
 
 body {
     width: 650px;
-    margin: 20%;
     font-family: Raleway;
 }
 
@@ -161,19 +160,23 @@ section {
 .ResultHotels {
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
     padding: 2px;
     list-style: none;
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
     border-radius: 15px;
     width:auto;
+
 }
 
 .ResultHotels2 {
     display: flex;
     flex-flow: column;
+    align-items: center;
     padding: 2px;
     list-style: none;
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
     border-radius: 15px;
     width:auto;
 }

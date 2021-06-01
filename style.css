@@ -257,34 +257,108 @@ aside ul {
     
 }
 
+.hotels2-header {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .ResultActivites {
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    display:grid;
+    grid-template-columns: 210px 210px 210px 210px;
+    grid-gap: 15px;
+    /*grid-template-rows: 20px;*/
+    grid-template-rows: auto;  
     padding: 0;
+    margin: 0;
     list-style: none;
+    align-items: center;
+    justify-items:stretch;
     background-color: white;
 }
 
 .ResultActivites li {
     box-shadow: 1px 5px 5px #F2F2F2;
+    border-radius: 15px;
 }
 
-.activites-grand {
+.pimg {
+    object-fit:cover;
+    object-position: 0 10%;
+    
+    width:210px;
+    height: 80px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.mimg {
+    object-fit: cover;
+    width:210px;
+    height: 115px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.gimg {
+    object-fit: cover;
+    width:210px;
+    height: 250px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    }
+
+.act01 {
+    grid-column: 1 ;
+    grid-row: 1 /span 2 ;
+    
+}
+
+.act02 {
+    grid-row: 1;
+    grid-column: 2;
+    object-fit: cover;
+}
+
+.act3 {
+    grid-row: 2;
+    grid-column: 2;
+    object-fit: cover;
+}
+
+.act04 {
+    grid-row: 1 /span 2;
+    grid-column: 3;
+    
+}
+
+.act05 {
+    grid-row: 1;
+    grid-column: 4;
+    object-fit: cover;
+}
+
+.act06 {
+    grid-row: 2;
+    grid-column: 4;
+    object-fit: cover;
+}
+
+
+/*.activites-grand {
 
     background: white;
     border-radius: 15px;
     /*padding: 5px;*/
-    margin: 5px;
+    /*margin: 5px;
     width: 300px;
     height:auto;
     font-size: 0.8em;
-    /*box-shadow: 1px 5px 5px rgb(216, 211, 211);*/
+    /*box-shadow: 1px 5px 5px rgb(216, 211, 211);
     
-}
+} */
 
-.activites-grand img {
+/*.activites-grand img {
     width: 300px;
     height: 300px;
     max-width: 100%;
@@ -300,16 +374,16 @@ aside ul {
     background: white;
     border-radius: 15px;
     /*padding: 5px;*/
-    margin: 5px;
+    /*margin: 5px;
     width: 300px;
     height:auto;
     font-size: 0.8em;
     text-align: bottom;
-    /*box-shadow: 5px 5px 5px rgb(216, 211, 211);*/
+    /*box-shadow: 5px 5px 5px rgb(216, 211, 211);
     
-}
+} */
 
-.activites-petit img {
+/*.activites-petit img {
     width: 300px;
     height: 150px;
     max-width: 100%;
@@ -318,7 +392,9 @@ aside ul {
     border-top-right-radius: 15%;
     object-fit: cover;
 
-}
+} */
+
+
 
 footer {
     display: flex;
