@@ -16,11 +16,21 @@ body {
     width: 900px;
     margin: auto;
     font-family: Raleway;
+    font-size: 0.9em;
+    
+}
+
+header {
+    display:grid;
+    grid-template-columns: 450px repeat(3, 150px);
+    grid-gap: 15px; 
+    grid-row-gap: 20px;
+    padding: 30px;
     
 }
 
 header img {
-    width : 70px;
+    width : 60px;
 }
 
 
@@ -44,29 +54,21 @@ a:link {
     color:#0065FC;
     text-decoration: none;
     padding: 10px 20px;
-    border-top: 1px solid #0065FC ;
+    
 
 }
 
 a:visited {
     color:black;
-    border-top: #F2F2F2;
+    border-top: white;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+a:hover {
+    border-top: 1px solid #0065FC ;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    
-}
 
-nav li {
+header a {
     margin-right: 30px;
     font-size: 0.8em;
 }
@@ -113,6 +115,10 @@ input[type=text] {
     border: transparent;
 }
 
+.f-button-p {
+    display:none;
+}
+
 .filtres {
     display:flex;
     flex-direction: row;
@@ -120,10 +126,13 @@ input[type=text] {
 }
 
 .filtres i {
+    font-size: 12px;
+    width: 15px;
+    text-align: center;
     color:#0065FC;
     border-style: none;
     border-width: 1px;
-    padding: 7px;
+    padding: 10px;
     border-radius: 50%;
     background-color:#DEEBFF;
 }
@@ -131,6 +140,8 @@ input[type=text] {
 .filtre-titre {
     margin: 5px;
     padding:7px;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 .filtre-logo {
@@ -144,10 +155,21 @@ input[type=text] {
 }
 
 .filtre-logo:hover {
-    border-style:outset;
-    border-width: 3px;
-    border-color:#0065FC;
     color:#0065FC;
+    background-color: #F2F2F2;
+}
+
+.alerte i {
+    color: #0065FC;
+    font-size: 10px;
+    border-radius: 50%;
+    border-color: #F2F2F2;
+    padding :5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-style: solid;
+    margin: 5px;
+    
 }
 
 section {
@@ -162,12 +184,14 @@ section {
 .ResultHotels {
     display: flex;
     flex-flow: row wrap;
-    padding: 2px;
+    
+    /*justify-content: space-between;*/
     list-style: none;
     background-color: #F2F2F2;
     border-radius: 15px;
     width:570px;
     list-style: none;
+    
 }
 
 .hotels-header {
@@ -181,10 +205,9 @@ section {
     border-radius: 15px;
     padding: 5px;
     margin: 5px;
-    width: 170px;
-    height: 150px;
+    width: 160px;
+    height: 130px;
     font-size: 0.8em;
-    text-align: bottom;
     box-shadow: 5px 5px 5px rgb(216, 211, 211);
     
 }
@@ -204,8 +227,8 @@ section {
 
 
 .hotels img {
-    width: 300px;
-    height: 100px;
+    width: 250px;
+    height: 80px;
     max-width: 100%;
     max-height: 100%;
     border-radius: 15px;
@@ -216,7 +239,7 @@ section {
 .hotels2 img {
     float: left;
     width: 90px;
-    height: 105px;
+    height: 90px;
     max-width: 100%;
     max-height: 100%;
     border-top-left-radius: 15px;
@@ -225,27 +248,10 @@ section {
 
 }
 
-
-/*aside {
-    text-align: center;
-    background-color: #F2F2F2;
-    border-radius: 15px;
-    max-width: 35%;
-    display: flex;
-    flex-direction:column-reverse;
-    justify-content: center;
-    list-style: none;
-    
-}
-
-aside ul {
-    list-style: none;
-    padding: 0;
-}*/
-
 .ResultHotels2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 2px;
     list-style: none;
     background-color: #F2F2F2;
@@ -262,30 +268,33 @@ aside ul {
     justify-content: space-around;
 }
 
+.sbleu {
+    color:#0065FC;
+}
+
+.sgris {
+    color:#F2F2F2;
+}
 
 .ResultActivites {
     display:grid;
-    grid-template-columns: 210px 210px 210px 210px;
-    grid-gap: 15px;
-    /*grid-template-rows: 20px;*/
-    grid-template-rows: auto;  
+    grid-template-columns: repeat(4, 210px);
+    grid-gap: 15px; 
+    grid-row-gap: 20px;
     padding: 0;
     margin: 0;
     list-style: none;
-    align-items: center;
-    justify-items:stretch;
     background-color: white;
 }
 
 .ResultActivites li {
     box-shadow: 1px 5px 5px #F2F2F2;
-    border-radius: 15px;
+    border-radius: 5%;
 }
 
 .pimg {
     object-fit:cover;
     object-position: 0 10%;
-    
     width:210px;
     height: 80px;
     border-top-left-radius: 5%;
@@ -294,6 +303,7 @@ aside ul {
 
 .mimg {
     object-fit: cover;
+    object-position: 0 40%;
     width:210px;
     height: 115px;
     border-top-left-radius: 5%;
@@ -301,7 +311,8 @@ aside ul {
 }
 
 .gimg {
-    object-fit: cover;
+    object-fit: none;
+    object-position: 55% 20%;
     width:210px;
     height: 250px;
     border-top-left-radius: 5%;
@@ -310,96 +321,49 @@ aside ul {
 
 .act01 {
     grid-column: 1 ;
-    grid-row: 1 /span 2 ;
-    
+    grid-row: 1 /span 3;
+    height:max-content;
 }
 
 .act02 {
-    grid-row: 1;
+    grid-row: 1 /span 2;
     grid-column: 2;
-    object-fit: cover;
+    height:max-content;
+    
 }
 
-.act3 {
-    grid-row: 2;
+.act03 {
+    grid-row: 3;
     grid-column: 2;
-    object-fit: cover;
+    height:max-content;
+    
 }
 
 .act04 {
-    grid-row: 1 /span 2;
+    grid-row: 1 /span 3;
     grid-column: 3;
+    height:max-content;
     
 }
 
 .act05 {
     grid-row: 1;
     grid-column: 4;
-    object-fit: cover;
+    height:max-content;
 }
 
 .act06 {
-    grid-row: 2;
+    grid-row: 2 /span 2;
     grid-column: 4;
-    object-fit: cover;
-}
-
-
-/*.activites-grand {
-
-    background: white;
-    border-radius: 15px;
-    /*padding: 5px;*/
-    /*margin: 5px;
-    width: 300px;
-    height:auto;
-    font-size: 0.8em;
-    /*box-shadow: 1px 5px 5px rgb(216, 211, 211);
+    height:max-content;
     
-} */
-
-/*.activites-grand img {
-    width: 300px;
-    height: 300px;
-    max-width: 100%;
-    max-height: 100%;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
-    object-fit: cover;
-
 }
-
-.activites-petit {
-
-    background: white;
-    border-radius: 15px;
-    /*padding: 5px;*/
-    /*margin: 5px;
-    width: 300px;
-    height:auto;
-    font-size: 0.8em;
-    text-align: bottom;
-    /*box-shadow: 5px 5px 5px rgb(216, 211, 211);
-    
-} */
-
-/*.activites-petit img {
-    width: 300px;
-    height: 150px;
-    max-width: 100%;
-    max-height: 100%;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
-    object-fit: cover;
-
-} */
-
-
 
 footer {
     display: flex;
     background-color: #F2F2F2 ;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    padding: 15px;
 }
 
 footer ul {
@@ -407,4 +371,116 @@ footer ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-device-width: 480px) {
+    body {
+        width: 400px;
+    }
+
+    a:hover {
+        border-top: white;
+        border-bottom: 1px solid #0065FC ;
+    }
+
+    a:visited {
+        color:black;
+        border-top: white;
+        border-bottom:#F2F2F2;
+    }
+
+    header {
+        display:grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-gap: 15px; 
+        grid-row-gap: 20px;
+        padding: 30px;
+        
+    }
+
+    header .logo {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    header .nav01 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    header .nav02 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    header .nav03 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .stitre {
+        text-align: center;
+        padding: 5%;
+        font-size: 2em;
+    }
+
+
+    section {
+        flex-direction:column-reverse;
+    }
+
+    .hotels-header {
+        width:auto;
+    }
+
+    .f-ville {
+        justify-content: center;
+    }
+
+    .f-button {
+        display:none;
+    }
+
+    .f-button-p {
+        display:block;
+        text-align: center;
+        background-color:#0065FC;
+        color: #F2F2F2;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+        padding: 5px;
+    }
+
+    .filtres {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: flex-start;
+    }
+    
+    
+
+    .ResultHotels {
+        flex-flow:column;
+        width: auto;  
+        background-color: white; 
+        align-items: center; 
+    }
+
+    .ResultHotels2 {
+        display: flex;
+        flex-direction: column;
+        width:auto;
+        background-color: white;
+        align-items: center;
+    }
+
+    .ResultActivites {
+        display:flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+    }
+
 }

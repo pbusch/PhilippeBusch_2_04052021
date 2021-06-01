@@ -5,19 +5,18 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="style-petit.css" />
+    
     <script src="https://kit.fontawesome.com/fc24da446d.js" crossorigin="anonymous"></script>
     <Title> Reservia - Plannifiez vos vacances</Title>
 </head>
 
 <body>
         <header>
-
-            <div id="logo">
+            <!--
+               <div id="logo">
                 <br />
                 <img src="images/logo.png" alt="Logo Reservia" />
-                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                <h2>En plein centre ville ou en pleine nature</h2>
+                
             </div>
 
             <nav>
@@ -27,8 +26,20 @@
                     <li><a href="inscription.html" target="_blank">S'inscrire</a></li>
                 </ul>
             </nav>
+             
+            -->
+            
+            <div class="logo"><img src="images/logo.png" alt="Logo Reservia" /></div>
+            <div class="nav01"><a href="#a-hebergements">Hébergements</a></div>
+            <div class="nav02"><a href="#a-activites">Activités</a></div>
+            <div class="nav03"><a href="inscription.html" target="_blank">S'inscrire</a></div>
 
         </header>
+        
+        <div class="stitre">
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <h2>En plein centre ville ou en pleine nature</h2>
+        </div>
 
         <div class="f-ville">
             <div class="f-gps">
@@ -44,18 +55,23 @@
             <div class="f-button">
                 <button type="button" class="button" form="form1" value="submit">Rechercher</button>
             </div>
+
+            <div class="f-button-p">
+                <button type="button" class="button" form="form1" value="submit"><i class="fas fa-search"></i></button>
+            </div>
+
         </div>
         <br/>
 
         <div class="filtres">
-            <div class="filtre-titre">Filtres</div>
-            <div class="filtre-logo"><i class="fas fa-money-bill-wave"></i> Economique </div>
-            <div class="filtre-logo"><i class="fas fa-child"></i> Familial</div>
-            <div class="filtre-logo"><i class="fas fa-heart"></i> Romantique</div>
-            <div class="filtre-logo"><i class="fas fa-dog"></i> Annimaux autorisés</div>
+            <div class="filtre-titre"><b>Filtres</b></div>
+            <div class="filtre-logo"><i class="fas fa-money-bill-wave"></i><b> Economique </b> </div>
+            <div class="filtre-logo"><i class="fas fa-child"></i><b> Familial </b></div>
+            <div class="filtre-logo"><i class="fas fa-heart"></i><b> Romantique </b></div>
+            <div class="filtre-logo"><i class="fas fa-dog"></i><b> Annimaux autorisés </b></div>
         </div>
 
-        <h2> <i class="fas fa-info" ></i>  Plus de 500 logements sont disponibles dans cette ville</h2>
+        <h2 class="alerte"> <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</h2>
         
 
             <section>
@@ -74,11 +90,11 @@
                                 Nuit à partir de <b>25 €</b> <br />
                             
                                 <div class="stars">
-                                    <i class="fas fa-star bleu" ></i>
-                                    <i class="fas fa-star bleu" ></i>
-                                    <i class="fas fa-star bleu" ></i>
-                                    <i class="fas fa-star bleu" ></i>
-                                    <i class="fas fa-star gris" ></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu" ></i>
+                                    <i class="fas fa-star sbleu" ></i>
+                                    <i class="fas fa-star sbleu" ></i>
+                                    <i class="fas fa-star sgris" ></i>
                                 </div>
                             </div>
                             
@@ -91,11 +107,11 @@
                                 Nuit à partir de <b>52 €</b> <br />
                             
                                 <div class="stars">
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
                                 </div>
                             </div>
                             
@@ -109,11 +125,11 @@
                                 Nuit à partir de <b>76 €</b> <br />
                             
                                 <div class="stars">
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sgris"></i>
                                 </div>
                             </div>
                             
@@ -127,11 +143,11 @@
                                 Nuit à partir de <b>46 €</b> <br />
                             
                                 <div class="stars">
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
-                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sgris"></i>
+                                    <i class="fas fa-star sgris"></i>
                                 </div>
                             </div>
                             
@@ -145,11 +161,11 @@
                                 Nuit à partir de <b>25 €</b> <br />
                             
                                 <div class="stars">
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sgris"></i>
                                 </div>
                             </div>
                             
@@ -163,18 +179,18 @@
                                 Nuit à partir de <b>96 €</b> <br />
                             
                                 <div class="stars">
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
                                 </div>
                             </div>
                             
                         </li>
 
                         <li class="hotels-footer">
-                           <br /> <h3>Afficher plus</h3>
+                           <br /> <h1>Afficher plus</h1>
                         </li>
                     </ul>
                 </div>   
@@ -197,11 +213,11 @@
                                 Nuit à partir de <b>128 €</b> <br /> <br /> 
                             
                                 <div class="stars">
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
                                 </div>
                             </div>
                             
@@ -214,11 +230,11 @@
                                 Nuit à partir de <b>71 €</b> <br /> <br />  
                             
                                 <div class="stars">
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sgris"></i>
                                 </div>
                             </div>
                             
@@ -232,11 +248,11 @@
                                 Nuit à partir de <b>68 €</b> <br /> <br /> 
                             
                                 <div class="stars">
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#0065FC"></i>
-                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sbleu"></i>
+                                    <i class="fas fa-star sgris"></i>
                                 </div>
                             </div>
                             
@@ -256,7 +272,7 @@
                     <img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="gimg" />
 
                     <div class="activites-infos">
-                        <b> Vieux Port</b> <br />
+                        <h1> Vieux Port</h1>
                     </div>
                     
                 </li>
@@ -265,13 +281,13 @@
                     <img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="mimg" />
                     
                     <div class="activites-infos">
-                        <b> Fort de Pomègues </b> <br />
+                        <h1> Fort de Pomègues </h1> 
                     </div>
                 </li>    
                 <li class="act03">
                     <img src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="pimg"/>
                     <div class="activites-infos">
-                        <b> Iles du frioul </b> <br />
+                        <h1> Iles du frioul </h1> 
                     </div>
                 </li>
 
@@ -279,7 +295,7 @@
                     <img src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="gimg" />
 
                     <div class="activites-infos">
-                        <b> Parc National des Calanques </b> <br />
+                        <h1> Parc National des Calanques </h1> 
                     </div>
                     
                 </li>
@@ -288,14 +304,14 @@
                     <img src= "images/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="pimg" />
 
                     <div class="activites-infos">
-                        <b> Notre-Dame-de-la-Garde </b> <br />
+                        <h1> Notre-Dame-de-la-Garde </h1> 
                     </div>
                 </li>
                  <li class="act06">          
                     <img src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="mimg"/>
 
                     <div class="activites-infos">
-                        <b> Parc Longchamp </b> <br />
+                        <h1> Parc Longchamp </h1> 
                     </div>
                     
                 </li>
@@ -328,6 +344,17 @@
                 <ul>
                     <li>Centre d'aide</li>
                     <li>Nous contacter</li>
+
+            
+
+                </ul>
+            </div>
+
+            <div id="footer4">
+                <strong></strong>
+                <ul>
+                    <li></li>
+                    <li></li>
 
                 </ul>
             </div>
