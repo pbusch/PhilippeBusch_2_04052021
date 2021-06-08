@@ -34,9 +34,14 @@ header img {
 }
 
 
-h1 {
+.ho1 {
     font-size: 0.9em;
     font-weight: bold;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    
 }
 
 h2 {
@@ -50,19 +55,36 @@ h3 {
 }
 
 
-a:link {
+header a:link {
     color:#0065FC;
     text-decoration: none;
     padding: 30px 20px;
 }
 
-a:visited {
+
+
+
+header a:visited {
     color:black;
     border-top: white;
 }
 
-a:hover {
+header a:hover {
     border-top: 1px solid #0065FC ;
+}
+
+a {
+text-decoration:none;
+}
+
+a:active {
+    text-decoration:none;
+    color: black; 
+}
+
+a:visited {
+    text-decoration:none;
+    color: black;
 }
 
 
@@ -170,7 +192,7 @@ input[type=text] {
     
 }
 
-section {
+.hebergements {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -383,12 +405,12 @@ footer ul {
         font-size: 1em;
     }
 
-    a:hover {
+    header a:hover {
         border-top: white;
-        border-bottom: 1px solid #0065FC ;
+        border-bottom: 1px solid #0065FC;
     }
 
-    a:visited {
+    header a:visited {
         color:black;
         border-top: white;
         border-bottom:#F2F2F2;
@@ -436,7 +458,7 @@ footer ul {
         font-size: 2em;
     }
 
-    h1 {
+    .ho1 {
         font-size: 0.7em;
         font-weight: bolder;
     }
@@ -445,8 +467,7 @@ footer ul {
         font-size: 0.5em;
     }
 
-
-    section {
+    .hebergements {
         flex-direction:column-reverse;
     }
 
@@ -574,3 +595,38 @@ footer ul {
     }
 
 }
+
+/* 
+  Tablettes Portrait
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    body {
+        width: 700px;
+
+    }
+
+    .ResultHotels {
+        background-color: white;
+    }
+    
+  }
+
+  /* 
+  Tablettes Landscape
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    body {
+        width: 700px;
+        margin: auto;
+
+    }
+
+    .ResultHotels {
+        background-color: white;
+    }
+    
+  }
