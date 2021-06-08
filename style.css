@@ -603,15 +603,55 @@ footer ul {
 @media (min-width: 768px) and (max-width: 1024px) {
   
     body {
-        width: 700px;
+        
+        margin: auto;
 
+    }
+
+    header {
+        display:grid;
+        grid-template-columns: 150px repeat(3, 150px);
+        grid-gap: 15px; 
+        grid-row-gap: 20px;
+        padding-top: 30px;
+        
+    }
+
+    .hebergements {
+        justify-content: flex-start;
+        flex-direction: column;
     }
 
     .ResultHotels {
         background-color: white;
+        padding-inline-start: 0px;
+    }
+
+    .ResultHotels2 {
+        flex-direction: row;
+    }
+
+    .ResultActivites {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+        align-items: center;
+        
+    }
+
+    .ResultActivites img {
+        width: 250px;
+        height: 120px;
+    }
+
+    .gimg {
+        object-fit: cover;
     }
     
   }
+    
+  
 
   /* 
   Tablettes Landscape
@@ -620,13 +660,53 @@ footer ul {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
     body {
-        width: 700px;
+        
         margin: auto;
 
     }
 
+    header {
+        display:grid;
+        grid-template-columns: 350px repeat(3, 150px);
+        grid-gap: 15px; 
+        grid-row-gap: 20px;
+        padding-top: 30px;
+        
+    }
+
+    
+
+    .hebergements {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
     .ResultHotels {
         background-color: white;
+        padding-inline-start: 0px;
+    }
+
+    .ResultHotels2 {
+        
+        flex-flow:column;
+    }
+
+    .ResultActivites {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+        align-items: center;
+        
+    }
+
+    .ResultActivites img {
+        width: 250px;
+        height: 120px;
+    }
+
+    .gimg {
+        object-fit: cover;
     }
     
   }
