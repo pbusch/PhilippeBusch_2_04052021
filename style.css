@@ -54,12 +54,12 @@ a {
     }
 
 a:active {
-    text-decoration:none;
+    /*text-decoration:none;*/
     color: black; 
 }
 
 a:visited {
-    text-decoration:none;
+    /*text-decoration:none;*/
     color: black;
 }
 
@@ -241,9 +241,6 @@ input[type=text] {
     box-shadow: 5px 5px 5px rgb(247, 244, 244);
     
 }
-
-
-
 
 .hotels img {
     width: 220px;
@@ -474,7 +471,6 @@ footer li {
     }
 
     .ho1 {
-        /*font-size: 0.7em;*/
         font-weight: 600;
     }
 
