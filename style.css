@@ -11,28 +11,20 @@
          url('fonts/raleway-v19-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
   }
 
-
 body {
     width: 900px;
     margin: auto;
     font-family: Raleway;
     font-size: 0.9em;
-    
 }
 
-header {
-    display:grid;
-    grid-template-columns: 450px repeat(3, 150px);
-    grid-gap: 15px; 
-    grid-row-gap: 20px;
-    padding-top: 30px;
-    
+.sbleu {
+    color:#0065FC;
 }
 
-header img {
-    width : 60px;
+.sgris {
+    color:#F2F2F2;
 }
-
 
 .ho1 {
     font-size: 0.9em;
@@ -40,9 +32,12 @@ header img {
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     margin-left: 0;
-    margin-right: 0;
-    
+    margin-right: 0;   
 }
+
+.stitre .ho1 {
+    font-size:0.7em;
+} 
 
 h2 {
     font-size: 0.6em;
@@ -54,28 +49,9 @@ h3 {
     font-weight: normal;
 }
 
-
-header a:link {
-    color:#0065FC;
-    text-decoration: none;
-    padding: 30px 20px;
-}
-
-
-
-
-header a:visited {
-    color:black;
-    border-top: white;
-}
-
-header a:hover {
-    border-top: 1px solid #0065FC ;
-}
-
 a {
-text-decoration:none;
-}
+    text-decoration:none;
+    }
 
 a:active {
     text-decoration:none;
@@ -88,10 +64,41 @@ a:visited {
 }
 
 
+
+header {
+    display:grid;
+    grid-template-columns: 500px repeat(3, 15%);
+    grid-gap: 15px; 
+    /*grid-row-gap: 20px;*/
+    padding-top: 30px;
+}
+
+header img {
+    width : 60px;
+}
+
+
 header a {
     margin-right: 30px;
     font-size: 0.8em;
 }
+
+header a:link {
+    color:#0065FC;
+    text-decoration: none;
+    padding: 30px 20px;
+}
+
+header a:visited {
+    color:black;
+    border-top: white;
+}
+
+header a:hover {
+    border-top: 1px solid #0065FC ;
+}
+
+/* Formulaire et filtres */
 
 .f-ville {
     display:flex;
@@ -124,8 +131,8 @@ input[type=text] {
     text-align: center;
     background-color:#0065FC;
     color: #F2F2F2;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
     padding: 5px;
 }
 
@@ -143,6 +150,7 @@ input[type=text] {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding-top: 10px;
 }
 
 .filtres i {
@@ -192,6 +200,8 @@ input[type=text] {
     
 }
 
+/* Resultats */
+
 .hebergements {
     display:flex;
     flex-direction: row;
@@ -232,18 +242,7 @@ input[type=text] {
     
 }
 
-.hotels2 {
 
-    background: white;
-    border-radius: 15px;
-    padding: 3px;
-    margin: 8px;
-    width: 215px;
-    font-size: 0.8em;
-    text-align: center;
-    box-shadow: 5px 5px 5px rgb(247, 244, 244);
-    
-}
 
 
 .hotels img {
@@ -270,6 +269,10 @@ input[type=text] {
 
 }
 
+.hotels2 .stars {
+    padding-top: 15px;
+}
+
 .ResultHotels2 {
     display: flex;
     flex-direction: column;
@@ -289,17 +292,25 @@ input[type=text] {
     justify-content: space-around;
 }
 
-.sbleu {
-    color:#0065FC;
+.hotels2 {
+
+    background: white;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 8px;
+    width: 215px;
+    font-size: 0.8em;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(247, 244, 244);
+    
 }
 
-.sgris {
-    color:#F2F2F2;
-}
+
 
 .hotels-infos {
     padding: 3px;
     text-align: left;
+    height: auto;
 }
 
 .ResultActivites {
@@ -399,6 +410,10 @@ footer ul {
     flex-direction: column;
 }
 
+footer li {
+    padding-top: 10px;
+}
+
 @media screen and (max-device-width: 480px) {
     body {
         width: 375px;
@@ -407,7 +422,7 @@ footer ul {
 
     header a:hover {
         border-top: white;
-        border-bottom: 1px solid #0065FC;
+        border-bottom: 2px solid #0065FC;
     }
 
     header a:visited {
@@ -448,19 +463,19 @@ footer ul {
     header .nav03 {
         grid-row: 1;
         grid-column: 2;
-        text-align: left;
+        text-align: right;
     }
 
     .stitre {
-        padding-left: 10%;
+        padding-left: 5%;
         padding-right: 10%;
-        text-align: center;
+        text-justify: auto;
         font-size: 2em;
     }
 
     .ho1 {
-        font-size: 0.7em;
-        font-weight: bolder;
+        /*font-size: 0.7em;*/
+        font-weight: 600;
     }
 
     h2 {
@@ -476,7 +491,9 @@ footer ul {
     }
 
     .filtres {
-        padding-left: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 5%;
     }
 
     .filtre-titre {
@@ -484,7 +501,7 @@ footer ul {
     }
 
     .f-ville {
-        justify-content: center;
+        padding-left: 5%;
     }
 
     .f-button {
@@ -501,8 +518,6 @@ footer ul {
         background-color:#0065FC;
         color: #F2F2F2;
         border-radius: 8px;
-        /*border-top-right-radius: 15%;
-        border-bottom-right-radius: 15%;*/
         padding: 5px;
     }
 
@@ -600,17 +615,16 @@ footer ul {
   Tablettes Portrait
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   
-    body {
-        
+    body { 
         margin: auto;
-
+        width:650px;
     }
 
     header {
         display:grid;
-        grid-template-columns: 150px repeat(3, 150px);
+        grid-template-columns: 150px repeat(3, 15%);
         grid-gap: 15px; 
         grid-row-gap: 20px;
         padding-top: 30px;
@@ -624,12 +638,28 @@ footer ul {
 
     .ResultHotels {
         background-color: white;
-        padding-inline-start: 0px;
+        padding: 0px;
+        /*justify-content:center;*/
     }
 
     .ResultHotels2 {
+        background-color: white;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
+
+    .hotels2-header {
+        width: 100%;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .hotels2-header .ho1 {
+        padding-right: 10%;
+    }
+
+
 
     .ResultActivites {
         display:flex;
@@ -637,6 +667,7 @@ footer ul {
         flex-wrap: wrap;
         background-color: white;
         align-items: center;
+        /*justify-content:center;*/
         
     }
 
@@ -655,7 +686,7 @@ footer ul {
 
   /* 
   Tablettes Landscape
-*/
+
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
@@ -674,8 +705,6 @@ footer ul {
         
     }
 
-    
-
     .hebergements {
         flex-direction: row;
         justify-content: flex-start;
@@ -687,7 +716,6 @@ footer ul {
     }
 
     .ResultHotels2 {
-        
         flex-flow:column;
     }
 
@@ -709,4 +737,5 @@ footer ul {
         object-fit: cover;
     }
     
-  }
+}
+*/
