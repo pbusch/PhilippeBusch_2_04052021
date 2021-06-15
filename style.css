@@ -54,22 +54,17 @@ a {
     }
 
 a:active {
-    /*text-decoration:none;*/
     color: black; 
 }
 
 a:visited {
-    /*text-decoration:none;*/
     color: black;
 }
-
-
 
 header {
     display:grid;
     grid-template-columns: 500px repeat(3, 15%);
     grid-gap: 15px; 
-    /*grid-row-gap: 20px;*/
     padding-top: 30px;
 }
 
@@ -214,23 +209,18 @@ input[type=text] {
 .ResultHotels {
     display: flex;
     flex-flow: row wrap;
-    
-    /*justify-content: space-between;*/
     list-style: none;
     background-color: #F2F2F2;
     border-radius: 15px;
     width:570px;
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .hotels-header {
     width:570px;
 }
 
-
 .hotels {
-
     background: white;
     border-radius: 15px;
     padding: 3px;
@@ -238,8 +228,7 @@ input[type=text] {
     width: 160px;
     height: 130px;
     font-size: 0.8em;
-    box-shadow: 5px 5px 5px rgb(247, 244, 244);
-    
+    box-shadow: 5px 5px 5px rgb(247, 244, 244);  
 }
 
 .hotels img {
@@ -301,8 +290,6 @@ input[type=text] {
     box-shadow: 5px 5px 5px rgb(247, 244, 244);
     
 }
-
-
 
 .hotels-infos {
     padding: 3px;
@@ -435,7 +422,6 @@ footer li {
         grid-row-gap: 20px;
         padding: 30px;
         font-weight: bolder;
-        
     }
 
     header img {
@@ -635,7 +621,6 @@ footer li {
     .ResultHotels {
         background-color: white;
         padding: 0px;
-        /*justify-content:center;*/
     }
 
     .ResultHotels2 {
@@ -678,60 +663,3 @@ footer li {
     
   }
     
-  
-
-  /* 
-  Tablettes Landscape
-
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-    body {
-        width: 750px;
-        margin: auto;
-
-    }
-
-    header {
-        display:grid;
-        grid-template-columns: 350px repeat(3, 150px);
-        grid-gap: 15px; 
-        grid-row-gap: 20px;
-        padding-top: 30px;
-        
-    }
-
-    .hebergements {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .ResultHotels {
-        background-color: white;
-        padding-inline-start: 0px;
-    }
-
-    .ResultHotels2 {
-        flex-flow:column;
-    }
-
-    .ResultActivites {
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: white;
-        align-items: center;
-        
-    }
-
-    .ResultActivites img {
-        width: 250px;
-        height: 120px;
-    }
-
-    .gimg {
-        object-fit: cover;
-    }
-    
-}
-*/
