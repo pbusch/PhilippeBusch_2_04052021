@@ -13,6 +13,7 @@
 
 body {
     margin: 0 15% 0 15%;
+    max-width: 1024px;
     font-family: Raleway;
 }
 
@@ -432,7 +433,6 @@ footer li {
         padding-right: 10%;
         text-justify: auto;
         font-size: 1.5em;
-        
     }
 
     .ho1 {
