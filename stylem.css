@@ -1,0 +1,54 @@
+    body {
+        margin: auto;
+        width: 80%;
+    }
+
+    .hebergements {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .ResultHotels {
+        background-color: white;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .ResultHotels2 {
+        background-color: white;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .hotels2 {
+        width: 220px;
+    }
+
+    .hotels2-header {
+        width: 100%;
+        text-align: left;
+        justify-content: right;
+        padding-right: 2%;
+    }
+
+    .hotels2-header h2 {
+        padding-right: 2%;
+    }
+
+    .ResultActivites {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+        align-items: center;
+    }
+
+    .ResultActivites img {
+        width: 250px;
+        height: 120px;
+    }
+
+    .gimg {
+        object-fit: cover;
+    }

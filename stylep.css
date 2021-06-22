@@ -1,0 +1,222 @@
+      body {
+          width: 100%;
+          margin: 0;
+      }
+
+      h1 {
+          font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 0.7em;
+    }
+
+     h3 {
+         font-size: 1em;
+     }
+
+     
+
+      header {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        font-weight: 900;
+        padding:0;
+        margin:0;
+    }
+
+    header a {
+        font-size: 1em;
+        padding:0;
+    }
+
+
+      header img {
+          padding-left: 10px;
+          width: 50%;
+      }
+
+      header .logo {
+          grid-row: 1;
+          grid-column: 1;
+      }
+
+      header .nav01 {
+          grid-row: 2;
+          grid-column: 1;
+      }
+
+      header .nav02 {
+          grid-row: 2;
+          grid-column: 2;
+      }
+
+      header .nav03 {
+          grid-row: 1;
+          grid-column: 2;
+          text-align: right;
+      }
+
+      .nav01:link {
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 5px;
+     }
+
+     .nav02:link {
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 5px;
+     }
+
+      header a:hover {
+          border-top: white;
+          
+      }
+
+      header a:visited {
+          color:#0065FC;
+          border-top: white;
+          border-bottom: 2px solid #F2F2F2;
+      }
+
+      .stitre {
+          padding-left: 5%;
+          padding-right: 10%;
+          text-justify: auto;
+          /*font-size: 1.5em;*/
+      }
+
+      .hebergements {
+          flex-direction: column-reverse;
+      }
+
+      .hotels-header {
+          width: auto;
+      }
+
+      .filtres {
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-left: 5%;
+      }
+
+      .filtre-titre {
+          width: 300px;
+      }
+
+      .f-ville {
+          padding-left: 5%;
+      }
+
+      .f-button {
+          display: none;
+      }
+
+      .f-querry {
+          width: 200px;
+      }
+
+      .f-button-p {
+          display: block;
+          text-align: center;
+          background-color: #0065FC;
+          color: #F2F2F2;
+          border-radius: 8px;
+          padding: 5px;
+      }
+
+      .filtres {
+          display: flex;
+          flex-direction: row;
+          padding: 20px;
+          justify-content: flex-start;
+      }
+
+      .alerte {
+          padding-left: 20px;
+      }
+
+      .ResultHotels {
+          flex-flow: column;
+          width: auto;
+          background-color: white;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+      }
+
+      .hotels {
+          width: auto;
+          height: auto;
+      }
+
+      .hotels img {
+          width: 320px;
+          height: 120px;
+      }
+
+      .ResultHotels2 {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0%;
+      }
+
+      .hotels-HautBas {
+        width: 100%;
+        text-align: left;
+        font-size: 1.2em;
+        padding-left: 15px;
+      }
+
+      .hotels-header {
+          width: 350px;
+          justify-content: space-between;
+          font-size: 1.8em;
+      }
+
+      .hotels-footer {
+          width: 100%;
+          text-align: left;
+          font-size: 1.2em;
+          padding-left: 15px;
+      }
+
+      .hotels2-header {
+          width: 350px;
+          justify-content: space-between;
+          font-size: 1.6em;
+      }
+
+      .activites-header {
+          width: 350px;
+          text-align: left;
+          padding-left: 15px;
+          font-size: 1.8em;
+      }
+
+      .hotels2 {
+          width: 320px;
+      }
+
+      .ResultActivites {
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .ResultActivites img {
+          width: 300px;
+          height: 120px;
+      }
+
+      .gimg {
+          object-fit: cover;
+      }
+
+      footer {
+          flex-direction: column;
+      }
