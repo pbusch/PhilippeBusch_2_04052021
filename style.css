@@ -13,7 +13,8 @@
 }
 
 body {
-    margin: 0 15% 0 15%;
+    margin: 0 auto;
+    padding: 0 15%;
     max-width: 1600px;
     font-family: Raleway;
 }
@@ -32,6 +33,12 @@ h2 {
 h3 {
     font-size: 0.9em;
     font-weight: 400;
+}
+
+h4 {
+    font-size: 0.9em;
+    font-weight: 900;
+    margin:2%;
 }
 
 ul {
@@ -59,11 +66,14 @@ a:visited {
     color: #F2F2F2;
 }
 
+.stats {
+    padding-top:6px;
+}
+
 header {
     display: grid;
     grid-template-columns: 50% repeat(3, 16%);
     gap: 2%;
-    
 }
 
 header img {
@@ -73,13 +83,15 @@ header img {
 
 header a {
     margin-right: 30px;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    font-weight: 500;
     text-align: center;
+    padding-top: 30px;
 }
 
 header a:link {
     color: #0065FC;
-    padding-top: 30px;
+    
 }
 
 header a:visited {
@@ -87,8 +99,13 @@ header a:visited {
     border-top: white;
 }
 
-header a:hover {
+header a:hover, header a:active {
     border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+.nav03 {
+    font-weight: 900;
 }
 
 /* Formulaire et filtres */
@@ -102,8 +119,8 @@ header a:hover {
 .f-gps {
     text-align: center;
     background-color: #F2F2F2;
-    border-top-left-radius: 25%;
-    border-bottom-left-radius: 25%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding: 5px;
 }
 
@@ -118,14 +135,15 @@ input[type=text] {
     border: none;
     outline: none;
     text-align: left;
+    font-weight: 900;
 }
 
 .f-button {
     text-align: center;
     background-color: #0065FC;
     color: #F2F2F2;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 5px;
 }
 
@@ -198,7 +216,7 @@ input[type=text] {
 .hebergements {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     padding: 0;
     margin: 0 0 3% 0;
@@ -210,13 +228,13 @@ input[type=text] {
     justify-content: space-around;
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 70%;
+    width: 65%;
     padding: 0 1% 0 1%;
 }
 
 .hotels-HautBas {
     width: 95%;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 20px 0;
 }
 
 .hotels {
@@ -224,7 +242,7 @@ input[type=text] {
     border-radius: 15px;
     padding: 3px;
     margin: 1px 10px 15px 10px;
-    width: 25%;
+    width: 28%;
     font-size: 0.8em;
     box-shadow: 5px 5px 5px rgb(234, 230, 230);
 }
@@ -234,6 +252,7 @@ input[type=text] {
     height: 100px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit: cover;
 }
 
 .ResultHotels2 {
@@ -242,13 +261,18 @@ input[type=text] {
     padding: 2px;
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 25%
+    width: 28%
 }
 
 .hotels2-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 20px 0 20px 0;
+    padding:0 5% 0 5%;
+}
+
+.hotels2-header i {
+    padding-right: 5%;
 }
 
 .hotels2 {
@@ -258,17 +282,14 @@ input[type=text] {
     border-radius: 15px;
     padding: 3px;
     margin: 1px 10px 15px 10px;
-    width: 85%;
+    width: 90%;
     font-size: 0.8em;
     box-shadow: 5px 5px 5px rgb(234, 230, 230);
 }
 
-
-
 .hotels2 img {
-    float: left;
-    width: 30%;
-    height: 100px;
+    width: 35%;
+    height: 120px;
     max-width: 100%;
     max-height: 100%;
     border-top-left-radius: 15px;
@@ -282,13 +303,13 @@ input[type=text] {
     flex-direction: row;
 }
 
-.hpop .nom  {
+.hpop .nom {
     padding: 1%;
 }
 
 .tarif {
     flex-grow: 1;
-    padding : 2% 2% 2% 0;
+    padding: 2% 2% 2% 0;
 }
 
 .hotels-infos {
@@ -299,18 +320,24 @@ input[type=text] {
     text-align: left;
 }
 
-
 .ResultActivites {
     display: grid;
-    grid-gap: 15px;
+    /*grid-template-rows: repeat(3, 126px);*/
+    /*grid-template-columns: repeat(4, 23%);*/
+    gap: 3%;
+    row-gap: 30px;
     padding: 0;
     margin: 0;
     list-style: none;
-    background-color: white;
+    align-items: center;
 }
 
 .ResultActivites h2 {
     padding-left: 5%;
+}
+
+.ResultActivites h4 {
+    margin: 2%; 
 }
 
 .ResultActivites li {
@@ -321,18 +348,19 @@ input[type=text] {
 
 .pimg {
     object-fit: cover;
-    object-position: 0 10%;
+    object-position: 0 5%;
     width: 100%;
-    height: 130px;
+    /*height: 90px;*/
+    height:130px;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
 
 .mimg {
     object-fit: cover;
-    object-position: 0 40%;
+    object-position: 0 35%;
     width: 100%;
-    height: 165px;
+    height:160px;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
@@ -341,7 +369,7 @@ input[type=text] {
     object-fit: none;
     object-position: 55% 20%;
     width: 100%;
-    height: 350px;
+    height: 360px;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
@@ -354,11 +382,13 @@ input[type=text] {
 .act02 {
     grid-row: 1 /span 2;
     grid-column: 2;
+    /*margin-bottom: 10%;*/
 }
 
 .act03 {
     grid-row: 3;
     grid-column: 2;
+    /*margin-bottom: 3%;*/
 }
 
 .act04 {
@@ -369,11 +399,14 @@ input[type=text] {
 .act05 {
     grid-row: 1;
     grid-column: 4;
+    /*margin-bottom: -3%;*/
+    
 }
 
 .act06 {
     grid-row: 2 /span 2;
     grid-column: 4;
+    /*margin-bottom: -20%;*/
 }
 
 footer {
@@ -381,6 +414,8 @@ footer {
     background-color: #F2F2F2;
     justify-content: space-between;
     padding: 30px;
+    margin-left:-5%;
+    margin-right:-2%;
 }
 
 footer ul {

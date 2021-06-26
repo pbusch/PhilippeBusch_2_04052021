@@ -1,35 +1,39 @@
       body {
           width: 100%;
           margin: 0;
+          padding: 0;
+          
       }
 
       h1 {
           font-size: 1.5em;
+          padding-top: 5px;
+          font-weight: 900;
       }
 
       h2 {
-        font-size: 0.7em;
-    }
+          font-size: 1.1em;
+          font-weight: 900;
+          margin:0;
+          padding:0;
+      }
 
-     h3 {
-         font-size: 1em;
-     }
-
-     
+      h3 {
+          font-size: 1em;
+      }
 
       header {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        font-weight: 900;
-        padding:0;
-        margin:0;
-    }
+          display: grid;
+          grid-template-columns: repeat(2, 50%);
+          font-weight: 900;
+          gap:0;
+      }
 
-    header a {
-        font-size: 1em;
-        padding:0;
-    }
-
+      header a {
+          font-size: 1em;
+          padding: 0;
+          border-top:0;
+      }
 
       header img {
           padding-left: 10px;
@@ -44,45 +48,56 @@
       header .nav01 {
           grid-row: 2;
           grid-column: 1;
+          margin-right: 0;
+          font-weight: 400;
+          padding-top:5px;
       }
 
       header .nav02 {
           grid-row: 2;
           grid-column: 2;
+          margin-right: 0;
+          font-weight: 400;
+          padding-top:5px;
       }
 
       header .nav03 {
           grid-row: 1;
           grid-column: 2;
           text-align: right;
+          padding-top:15px;
       }
 
-      .nav01:link {
-        border-bottom: 2px solid #0065FC;
-        padding-bottom: 5px;
-     }
-
-     .nav02:link {
-        border-bottom: 2px solid #0065FC;
-        padding-bottom: 5px;
-     }
-
-      header a:hover {
-          border-top: white;
-          
+      .nav01:link, .nav02:link {
+          color: #0065FC;
+          border-bottom: 2px solid #0065FC;
+          padding-bottom: 5px;
+          border-top: 0px;
       }
 
-      header a:visited {
-          color:#0065FC;
-          border-top: white;
-          border-bottom: 2px solid #F2F2F2;
+      .nav03:hover {
+          border-top: 0;
+      }
+
+
+      .nav01:visited, .nav02:visited {
+        color: black;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 5px;
+        border-top: 0px;
+      }
+
+      .nav01:active, .nav02:active, .nav01:hover, .nav02:hover {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 5px;
+        border-top: 0px;
       }
 
       .stitre {
           padding-left: 5%;
           padding-right: 10%;
           text-justify: auto;
-          /*font-size: 1.5em;*/
       }
 
       .hebergements {
@@ -100,7 +115,7 @@
       }
 
       .filtre-titre {
-          width: 300px;
+          width: 100%;
       }
 
       .f-ville {
@@ -164,36 +179,20 @@
       }
 
       .hotels-HautBas {
-        width: 100%;
-        text-align: left;
-        font-size: 1.2em;
-        padding-left: 15px;
-      }
-
-      .hotels-header {
-          width: 350px;
-          justify-content: space-between;
-          font-size: 1.8em;
-      }
-
-      .hotels-footer {
-          width: 100%;
+          width: 80%;
           text-align: left;
-          font-size: 1.2em;
-          padding-left: 15px;
       }
 
       .hotels2-header {
-          width: 350px;
+          width: 80%;
           justify-content: space-between;
-          font-size: 1.6em;
+          padding:0;
       }
 
       .activites-header {
-          width: 350px;
+          width: 80%;
           text-align: left;
-          padding-left: 15px;
-          font-size: 1.8em;
+          padding-left: 10%;
       }
 
       .hotels2 {
@@ -205,7 +204,15 @@
           flex-direction: column;
           background-color: white;
           align-items: center;
-          justify-content: center;
+          margin: 5% 0 5% 0;
+      }
+
+      .ResultActivites li {
+          margin: 3% 0 3% 0;
+      }
+
+      .ResultActivites h4 {
+          padding: 3% 0 2% 3%;
       }
 
       .ResultActivites img {
@@ -217,6 +224,11 @@
           object-fit: cover;
       }
 
+      .mimg {
+        object-position: 0 50%;
+    }
+
       footer {
           flex-direction: column;
+          margin:0;
       }

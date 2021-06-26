@@ -3,21 +3,30 @@
         width: 80%;
     }
 
+    header {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        gap: 2%;
+    }
+
+    header img {
+        width:80%;
+    }
+
     .hebergements {
         justify-content: flex-start;
         flex-direction: column;
     }
 
     .ResultHotels {
-        background-color: white;
-        padding: 0px;
+        padding: 0;
         width: 100%;
     }
 
     .ResultHotels2 {
-        background-color: white;
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 0;
         width: 100%;
     }
 
@@ -28,20 +37,17 @@
     .hotels2-header {
         width: 100%;
         text-align: left;
-        justify-content: right;
-        padding-right: 2%;
+        padding: 0 5% 0 2%;
     }
 
-    .hotels2-header h2 {
-        padding-right: 2%;
-    }
+  
 
     .ResultActivites {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         background-color: white;
-        align-items: center;
+        justify-content: space-between;
     }
 
     .ResultActivites img {
@@ -51,4 +57,8 @@
 
     .gimg {
         object-fit: cover;
+    }
+
+    footer {
+        margin:0;
     }
