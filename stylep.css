@@ -1,8 +1,7 @@
       body {
           width: 100%;
           margin: 0;
-          padding: 0;
-          
+          padding: 0; 
       }
 
       h1 {
@@ -204,7 +203,8 @@
           flex-direction: column;
           background-color: white;
           align-items: center;
-          margin: 5% 0 5% 0;
+          margin: 5% 0 5%;
+          row-gap:0;
       }
 
       .ResultActivites li {
