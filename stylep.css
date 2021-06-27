@@ -195,8 +195,13 @@
       }
 
       .hotels2 {
-          width: 320px;
+          width:95%;
       }
+
+      .hotels-img {
+        width: 150px;
+        height: 120px;
+    }
 
       .ResultActivites {
           display: flex;
