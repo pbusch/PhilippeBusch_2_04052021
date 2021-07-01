@@ -2,12 +2,12 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/raleway-v19-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/raleway-v19-latin-regular.eot');/* IE9 Compat Modes */
     src: local(''), url('fonts/raleway-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('fonts/raleway-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
     url('fonts/raleway-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
     url('fonts/raleway-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('fonts/raleway-v19-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+    url('fonts/raleway-v19-latin-regular.svg#Raleway') format('svg');/* Legacy iOS */
 }
 
 body {
@@ -31,13 +31,13 @@ h2 {
 h3 {
     font-size: 0.9em;
     font-weight: 400;
-    margin:0;
+    margin: 0;
 }
 
 h4 {
     font-size: 0.9em;
     font-weight: 900;
-    margin:2%;
+    margin: 2%;
 }
 
 ul {
@@ -48,8 +48,6 @@ a {
     text-decoration: none;
     color: black;
 }
-
-
 
 a:active {
     color: black;
@@ -68,7 +66,7 @@ a:visited {
 }
 
 .stats {
-    padding-top:6px;
+    padding-top: 6px;
 }
 
 nav {
@@ -91,10 +89,8 @@ nav a {
     border-top: 2px solid white;
 }
 
-
 nav a:link {
     color: #0065FC;
-    
 }
 
 nav a:visited {
@@ -259,7 +255,7 @@ input[type=text] {
 }
 
 .hotels-infos {
-    width:auto;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -267,14 +263,13 @@ input[type=text] {
 }
 
 .nom {
-    padding-right: 1%; 
+    padding-right: 1%;
 }
 
 .tarif {
     flex-grow: 1;
     padding: 2% 2% 2% 0;
 }
-
 
 .hotels img {
     width: 100%;
@@ -291,14 +286,13 @@ input[type=text] {
     background-color: #F2F2F2;
     border-radius: 15px;
     width: 28%;
-    
 }
 
 .hotels2-header {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 20px;
-    padding:0 5% 0 5%;
+    padding: 0 5% 0 5%;
 }
 
 .hotels2-header i {
@@ -317,7 +311,6 @@ input[type=text] {
     box-shadow: 5px 5px 5px rgb(234, 230, 230);
 }
 
-
 .hotels2 img {
     object-fit: cover;
     width: 120px;
@@ -325,7 +318,6 @@ input[type=text] {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding-right: 10px;
-  
 }
 
 .hpop {
@@ -362,7 +354,7 @@ input[type=text] {
     object-fit: cover;
     object-position: 0 5%;
     width: 100%;
-    height:130px;
+    height: 130px;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
@@ -371,7 +363,7 @@ input[type=text] {
     object-fit: cover;
     object-position: 0 35%;
     width: 100%;
-    height:160px;
+    height: 160px;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
@@ -407,7 +399,7 @@ input[type=text] {
 
 .act05 {
     grid-row: 1;
-    grid-column: 4; 
+    grid-column: 4;
 }
 
 .act06 {
