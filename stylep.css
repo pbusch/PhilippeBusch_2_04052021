@@ -21,30 +21,30 @@
           font-size: 1em;
       }
 
-      header {
+      nav {
           display: grid;
           grid-template-columns: repeat(2, 50%);
           font-weight: 900;
           gap:0;
       }
 
-      header a {
+      nav a {
           font-size: 1em;
           padding: 0;
           border-top:0;
       }
 
-      header img {
+      nav img {
           padding-left: 10px;
           width: 50%;
       }
 
-      header .logo {
+      nav .logo {
           grid-row: 1;
           grid-column: 1;
       }
 
-      header .nav01 {
+      nav .nav01 {
           grid-row: 2;
           grid-column: 1;
           margin-right: 0;
@@ -52,7 +52,7 @@
           padding-top:5px;
       }
 
-      header .nav02 {
+      nav .nav02 {
           grid-row: 2;
           grid-column: 2;
           margin-right: 0;
@@ -60,24 +60,24 @@
           padding-top:5px;
       }
 
-      header .nav03 {
+      nav .nav03 {
           grid-row: 1;
           grid-column: 2;
           text-align: right;
           padding-top:15px;
       }
 
-      .nav01:link, .nav02:link {
-          color: #0065FC;
-          border-bottom: 2px solid #0065FC;
-          padding-bottom: 5px;
-          border-top: 0px;
-      }
 
       .nav03:hover {
           border-top: 0;
       }
 
+      .nav01:link, .nav02:link {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 5px;
+        border-top: 0px;
+    }
 
       .nav01:visited, .nav02:visited {
         color: black;
@@ -108,13 +108,21 @@
       }
 
       .filtres {
-          padding-top: 0;
-          padding-bottom: 0;
-          padding-left: 5%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: flex-start;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 5%;
       }
 
       .filtre-titre {
           width: 100%;
+      }
+
+      .filtre-logo {
+          padding: 5px;
       }
 
       .f-ville {
@@ -136,13 +144,6 @@
           color: #F2F2F2;
           border-radius: 8px;
           padding: 5px;
-      }
-
-      .filtres {
-          display: flex;
-          flex-direction: row;
-          padding: 20px;
-          justify-content: flex-start;
       }
 
       .alerte {
@@ -198,7 +199,7 @@
           width:95%;
       }
 
-      .hotels-img {
+      .hotels2-box {
         width: 150px;
         height: 120px;
     }
@@ -213,7 +214,7 @@
       }
 
       .ResultActivites li {
-          margin: 3% 0 3% 0;
+          margin: 3% 0 3%;
       }
 
       .ResultActivites h4 {
@@ -223,10 +224,6 @@
       .ResultActivites img {
           width: 300px;
           height: 120px;
-      }
-
-      .gimg {
-          object-fit: cover;
       }
 
       .mimg {

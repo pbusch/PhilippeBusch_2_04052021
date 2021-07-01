@@ -1,27 +1,35 @@
-    header {
+    body {
+        width: auto;
+        padding: 0 5%;
+    }
+
+    nav {
         display: grid;
         grid-template-columns: repeat(4, 25%);
         gap: 2%;
     }
 
-    header img {
+    nav img {
         width:80%;
     }
 
     .hebergements {
         justify-content: flex-start;
         flex-direction: column;
+    
     }
 
     .ResultHotels {
         padding: 0;
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .ResultHotels2 {
         flex-direction: row;
         flex-wrap: wrap;
         padding: 0;
+        margin:0;
         width: 100%;
     }
 
@@ -35,25 +43,24 @@
         padding: 0 5% 0 2%;
     }
 
-    .hotels-img {
-        width: 150px;
-        height: 120px;
+    .hotels2 img {
+        width:250px;
+        
     }
+
     
     .ResultActivites {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         background-color: white;
+        justify-content: space-evenly;
     }
 
     .ResultActivites img {
+       
         width: 250px;
         height: 120px;
-    }
-
-    .gimg {
-        object-fit: cover;
     }
 
     footer {

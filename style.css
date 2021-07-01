@@ -11,9 +11,9 @@
 }
 
 body {
+    width: 1440px;
     margin: 0 auto;
-    padding: 0 15%;
-    max-width: 1600px;
+    max-width: 1440px;
     font-family: Raleway;
 }
 
@@ -25,12 +25,13 @@ h1 {
 h2 {
     font-size: 1em;
     font-weight: 900;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 0;
 }
 
 h3 {
     font-size: 0.9em;
     font-weight: 400;
+    margin:0;
 }
 
 h4 {
@@ -47,6 +48,8 @@ a {
     text-decoration: none;
     color: black;
 }
+
+
 
 a:active {
     color: black;
@@ -68,18 +71,18 @@ a:visited {
     padding-top:6px;
 }
 
-header {
+nav {
     display: grid;
-    grid-template-columns: 50% repeat(3, 16%);
+    grid-template-columns: 62% repeat(3, 12%);
     gap: 2%;
 }
 
-header img {
+nav img {
     width: 20%;
     padding-top: 10px;
 }
 
-header a {
+nav a {
     margin-right: 30px;
     font-size: 0.9em;
     font-weight: 500;
@@ -88,17 +91,18 @@ header a {
     border-top: 2px solid white;
 }
 
-header a:link {
+
+nav a:link {
     color: #0065FC;
     
 }
 
-header a:visited {
+nav a:visited {
     color: black;
     border-top: white;
 }
 
-header a:hover, header a:active {
+nav a:hover, nav a:active {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
@@ -107,12 +111,17 @@ header a:hover, header a:active {
     font-weight: 900;
 }
 
+.stitre {
+    margin-bottom: 2%;
+}
+
 /* Formulaire et filtres */
 
 .f-ville {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 5px;
 }
 
 .f-gps {
@@ -162,6 +171,7 @@ input[type=text] {
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: 10px;
+    margin-bottom: 5px;
 }
 
 .filtres i {
@@ -189,13 +199,17 @@ input[type=text] {
     border-color: #DEEBFF;
     border-left-style: none;
     border-width: 1px;
-    margin: 5px;
+    margin: 5px 10px;
     padding-right: 10px;
 }
 
 .filtre-logo:hover {
     color: #0065FC;
     background-color: #F2F2F2;
+}
+
+.alerte {
+    margin-bottom: 5px;
 }
 
 .alerte i {
@@ -250,7 +264,15 @@ input[type=text] {
     flex-direction: column;
     justify-content: space-around;
     padding: 1px 0 5px 10px;
-    text-align: left;
+}
+
+.nom {
+    padding-right: 1%; 
+}
+
+.tarif {
+    flex-grow: 1;
+    padding: 2% 2% 2% 0;
 }
 
 
@@ -268,7 +290,8 @@ input[type=text] {
     padding: 2px;
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 28%
+    width: 28%;
+    
 }
 
 .hotels2-header {
@@ -294,20 +317,15 @@ input[type=text] {
     box-shadow: 5px 5px 5px rgb(234, 230, 230);
 }
 
-.hotels-img {
-    width:90px;
-    height: 120px;
-}
 
 .hotels2 img {
-
     object-fit: cover;
-    width:inherit;
+    width: 120px;
     height: 120px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding-right: 10px;
-    
+  
 }
 
 .hpop {
@@ -316,13 +334,8 @@ input[type=text] {
     justify-content: start;
 }
 
-.nom {
-    padding: 1%;
-}
-
-.tarif {
-    flex-grow: 1;
-    padding: 2% 2% 2% 0;
+.activites-header {
+    margin-bottom: 15px;
 }
 
 .ResultActivites {
@@ -364,7 +377,7 @@ input[type=text] {
 }
 
 .gimg {
-    object-fit: none;
+    object-fit: cover;
     object-position: 55% 20%;
     width: 100%;
     height: 360px;
@@ -407,8 +420,7 @@ footer {
     background-color: #F2F2F2;
     justify-content: space-between;
     padding: 30px;
-    margin-left:-5%;
-    margin-right:-2%;
+    margin: 0 -2% 0;
 }
 
 footer ul {
