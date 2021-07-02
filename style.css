@@ -11,7 +11,7 @@
 }
 
 body {
-    width: 1440px;
+    /*width: 1440px;*/
     margin: 0 auto;
     max-width: 1440px;
     font-family: Raleway;
@@ -80,7 +80,7 @@ nav img {
     padding-top: 10px;
 }
 
-nav a {
+.nav01, .nav02, .nav03 {
     margin-right: 30px;
     font-size: 0.9em;
     font-weight: 500;
@@ -89,16 +89,16 @@ nav a {
     border-top: 2px solid white;
 }
 
-nav a:link {
+.nav01:link, .nav02:link {
     color: #0065FC;
 }
 
-nav a:visited {
+.nav01:visited, .nav02:visited {
     color: black;
     border-top: white;
 }
 
-nav a:hover, nav a:active {
+.nav01:hover, .nav01:active, .nav02:hover, .nav02:active {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
